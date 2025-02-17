@@ -40,3 +40,11 @@ const downloadBtn = document.querySelector(".btn");
             window.location.href = "../photos/s@ty@resume.pdf"; // Direct download
         });
     }
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+    
+    menuIcon.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+    
+    
