@@ -149,8 +149,8 @@ nav a:hover::after {
   }
   
   .hero-image img {
-    width: 450px;
-    height: auto;
+    width: 350px;
+    height: 350px;
     border-radius: 60%;
     box-shadow: 5px 5px 15px var(--accent);
     animation: zoom 3s infinite alternate ease-in-out;
