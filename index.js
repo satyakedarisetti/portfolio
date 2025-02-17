@@ -49,11 +49,18 @@ const downloadBtn = document.querySelector(".btn");
     
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxu9oaVWdUnYt09z0mGDgyuC7ix1WOOqXMkkDI15-_7JKv2aNzqO9oFlSkhEqhx2o-TBQ/exec'
   const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response =>  {
+        msg.innerHTML = "message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
       .catch(error => console.error('Error!', error.message))
   })
  
