@@ -493,10 +493,11 @@ body {
    .hero-container {
       flex-direction: column-reverse;  
       text-align: center;
+      margin-top: 50px;
   }
 
   .hero-image img {
-    margin-top: 700px;
+    margin-top: 100px;
       max-width: 90%;  
       margin-bottom: 20px;
       border-radius: 50%;
@@ -523,7 +524,7 @@ body {
     
   } 
   .nav-content {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .nav-content nav {
     display: none;
