@@ -523,7 +523,7 @@ body {
     
   } 
   .nav-content {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .nav-content nav {
     display: none;
@@ -548,8 +548,9 @@ body {
 }
 #resume{
   font-size: 5px;
-  height: fit-content;
-  width: fit-content;
+   height: 10px;
+   width: 15px;
+
 }
 .btn i{
   display: none;
