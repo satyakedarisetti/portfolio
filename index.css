@@ -20,9 +20,12 @@
   body {
     background: var(--body-bg);
     font-family: Arial, sans-serif;
-    color: var(--text-color);   
+    color: var(--text-color); 
+      transition: background-color 0.3s, color 0.3s;
+
   }
-   
+    
+
   .nav-container {
     display: block;
     background-color: var(--nav-bg);

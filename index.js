@@ -63,5 +63,10 @@ const downloadBtn = document.querySelector(".btn");
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+//   toggle switch
+
+ 
+   
  
     
